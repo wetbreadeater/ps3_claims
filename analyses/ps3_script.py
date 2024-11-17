@@ -77,10 +77,10 @@ print(
 )
 # %%
 # TODO: Let's add splines for BonusMalus and Density and use a Pipeline.
-# Steps: 
-# 1. Define a Pipeline which chains a StandardScaler and SplineTransformer. 
-#    Choose knots="quantile" for the SplineTransformer and make sure, we 
-#    are only including one intercept in the final GLM. 
+# Steps:
+# 1. Define a Pipeline which chains a StandardScaler and SplineTransformer.
+#    Choose knots="quantile" for the SplineTransformer and make sure, we
+#    are only including one intercept in the final GLM.
 # 2. Put the transforms together into a ColumnTransformer. Here we use OneHotEncoder for the categoricals.
 # 3. Chain the transforms together with the GLM in a Pipeline.
 
@@ -165,7 +165,7 @@ print(
 # TODO: Let's tune the LGBM to reduce overfitting.
 # Steps:
 # 1. Define a `GridSearchCV` object with our lgbm pipeline/estimator. Tip: Parameters for a specific step of the pipeline
-# can be passed by <step_name>__param. 
+# can be passed by <step_name>__param.
 
 # Note: Typically we tune many more parameters and larger grids,
 # but to save compute time here, we focus on getting the learning rate
